@@ -59,3 +59,6 @@ class FUNC,WPS backend
 class COSMOS,BLOB,KV data
 class APP,MON monitor
 ```
+# repo links
+- chat api: https://github.com/XinyiZhao-cloud/chat-api
+- chat frontend: https://github.com/XinyiZhao-cloud/chat-frontend
