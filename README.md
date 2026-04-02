@@ -62,3 +62,24 @@ class APP,MON monitor
 # repo links
 - chat api: https://github.com/XinyiZhao-cloud/chat-api
 - chat frontend: https://github.com/XinyiZhao-cloud/chat-frontend
+
+
+
+```mermaid
+flowchart LR
+    U[User Browser]
+    F[Frontend<br>Azure Static Web App]
+    B[Backend API<br>Azure App Service]
+    A[SQL-based Authentication]
+    S[IP Access Restriction]
+    C[Azure Cosmos DB<br>Chat messages and user profiles]
+    W[Azure Web PubSub<br>Real-time message delivery]
+
+    U --> F
+    F --> B
+    B --> A
+    A --> S
+    B --> C
+    B --> W
+    W --> U
+```
